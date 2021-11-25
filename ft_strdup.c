@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 17:53:36 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/09 18:56:32 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/19 19:15:01 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ char	*ft_strdup(const char *s1)
 #include <stdio.h>
 int main ()
 {
-	char eddo[] = "MohammedEddoChak";
-    printf("%s",ft_strdup(eddo));
+	char *eddo = "moha edo chak";
+    printf("%s",strdup(eddo));
 }*/

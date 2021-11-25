@@ -1,43 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtlcpy.c                                      :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/07 14:22:49 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/21 15:56:26 by med-doba         ###   ########.fr       */
+/*   Created: 2021/11/16 01:47:43 by med-doba          #+#    #+#             */
+/*   Updated: 2021/11/19 22:20:26 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	i;
-	size_t	j;
+	unsigned int	i;
+	char			*str;
 
 	i = 0;
-	j = 0;
-	if (dstsize == 0)
-		return (ft_strlen(src));
-	while (src[i])
-		i++;
-	while (src[j] != '\0' && j < (dstsize - 1))
+	if (!s)
+		return (NULL);
+	str = malloc(sizeof(char ) * ft_strlen(s) + 1);
+	if (!str)
+		return (NULL);
+	while (s[i])
 	{
-		dst[j] = src[j];
-		j++;
+		str[i] = f(i, s[i]);
+		i++;
 	}
-	dst[j] = '\0';
-	return (i);
+	str[i] = '\0';
+	return (str);
 }
-/*#include <string.h>
-#include <stdio.h>
+/*char	f(unsigned int i, char c)
+{
+	if (i == 7)
+		c = 65;
+	return (c);
+}
+#include<stdio.h>
 int main ()
 {
-	char src[] = "gj";
-	char dst[] = "eddo";
-	printf("%zu\n", ft_strlcpy(dst, src, 0));
-	printf("%zu", strlcpy(dst, src, 0));
+	char *str = "moha dobaji";
+	char *ptr = ft_strmapi(str, f);
+	printf("%s", ptr);
 }*/

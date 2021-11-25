@@ -6,10 +6,11 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 17:59:53 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/11 22:13:49 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/20 17:33:33 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<stdlib.h>
+
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -22,6 +23,8 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)&s[i]);
 		i++;
 	}
+	if (c == '\0')
+		return ((char *)&s[i]);
 	return (NULL);
 }
 /*#include <string.h>

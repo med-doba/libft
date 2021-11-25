@@ -6,41 +6,41 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 18:49:30 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/07 19:38:54 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:26:17 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(char *str)
 {
-	int	i;
+	int	j;
 	int	nb;
 	int	f;
 
-	i = 0;
+	j = 0;
 	nb = 1;
 	f = 0;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
-		|| str[i] == '\r' || str[i] == '\v' || str[i] == '\f')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	while (str[j] == ' ' || str[j] == '\t' || str[j] == '\n'
+		|| str[j] == '\r' || str[j] == '\v' || str[j] == '\f')
+		j++;
+	if (str[j] == '-' || str[j] == '+')
 	{
-		if (str[i] == '-')
+		if (str[j] == '-')
 			nb *= -1;
-		i++;
+		j++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (str[j] >= '0' && str[j] <= '9')
 	{
-		f = (f * 10) + str[i] - 48;
-		i++;
+		f = (f * 10) + str[j] - 48;
+		j++;
 	}
 	return (f * nb);
 }
-/*
+/*#include <stdlib.h>
 #include <stdio.h>
 int main ()
 {
-	char str[] = "-+123";
+	char str[] = "2018";
     int val = ft_atoi(str);
-    printf("%d ", val);
+    printf("%d", val);
     return 0;
 }*/

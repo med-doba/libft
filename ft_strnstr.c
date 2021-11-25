@@ -6,25 +6,26 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 10:26:57 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/09 12:02:39 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/22 13:30:54 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	unsigned int	i;
-	unsigned int	x;
+	size_t	i;
+	size_t	x;
 
 	i = 0;
-	x = 0;
-	if (needle[0] == '\0')
+	if (needle[0] == '\0' || haystack == needle)
 		return ((char *)haystack);
 	while (haystack[i] && i < len)
 	{
+		x = 0;
 		if (haystack[i] == needle[x])
 		{
-			while (i + x < len && haystack[i + x] == needle[x])
+			while (i + x <= len && haystack[i + x] == needle[x])
 			{
 				x++;
 				if (!needle[x])
@@ -33,13 +34,14 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		}
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
 /*#include <string.h>
 #include <stdio.h>
 int main ()
 {
-	char str[] = "moha eddo chak";
-	char find[] = "";
-	printf("%s", ft_strnstr(str, find, 16));
+	char str[] = "lorem ipsum dolor sit amet";
+	char find[] = "ipsumm";
+	printf("%s\n", strnstr(str, find, 30));
+	printf("%s", ft_strnstr(str, find, 30));
 }*/

@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 03:20:45 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/12 21:09:28 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:33:44 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ char	*ft_itoa(int n)
 
 	taille = len(n);
 	str = malloc(sizeof(char) * (taille + 1));
+	if (str == NULL)
+		return (NULL);
 	str[taille] = '\0';
 	if (n < 0)
 		str[0] = '-';
@@ -57,7 +59,7 @@ char	*ft_itoa(int n)
 /*#include <stdio.h>
 int main(void)
 {
-	int nbr = 18012003;
+	int nbr = -18012003;
 	printf("%s\n", ft_itoa(nbr));
 	return (0);
 }*/
