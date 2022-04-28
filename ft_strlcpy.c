@@ -6,11 +6,10 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 14:22:49 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/21 15:56:26 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/26 16:27:02 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
@@ -32,12 +31,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[j] = '\0';
 	return (i);
 }
-/*#include <string.h>
-#include <stdio.h>
-int main ()
-{
-	char src[] = "gj";
-	char dst[] = "eddo";
-	printf("%zu\n", ft_strlcpy(dst, src, 0));
-	printf("%zu", strlcpy(dst, src, 0));
-}*/

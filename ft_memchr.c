@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:19:15 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/21 21:05:36 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/26 16:41:46 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*#include <string.h>
-#include <stdio.h>
-int main ()
-{
-	char str[] = {0, 1, 2, 3, 4, 5};
-	char *eddo = ft_memchr(str, 0, 0);
-	printf("%s", eddo);
-}*/

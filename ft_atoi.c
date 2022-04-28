@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 18:49:30 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/21 20:26:17 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/26 17:22:38 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,3 @@ int	ft_atoi(char *str)
 	}
 	return (f * nb);
 }
-/*#include <stdlib.h>
-#include <stdio.h>
-int main ()
-{
-	char str[] = "2018";
-    int val = ft_atoi(str);
-    printf("%d", val);
-    return 0;
-}*/

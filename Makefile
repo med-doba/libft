@@ -6,7 +6,7 @@
 #    By: med-doba <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/17 17:41:58 by med-doba          #+#    #+#              #
-#    Updated: 2021/11/21 20:28:35 by med-doba         ###   ########.fr        #
+#    Updated: 2022/04/28 00:46:43 by med-doba         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,16 +26,16 @@ FCT = ft_atoi.c ft_itoa.c ft_putendl_fd.c ft_strlcat.c ft_strtrim.c \
 
 OBJ = $(FCT:.c=.o)
 $(NOM): $(OBJ)
-	ar -rc $(NOM) $(OBJ)
+	@ar -rc $(NOM) $(OBJ)
 
 %.o : %.c $(HEADER)
-	$(CC) $(FLAGS) -c $< -o $@
+	@$(CC) $(FLAGS) -c $< -o $@
 
 clean:
-	rm -rf $(OBJ)
+	@rm -rf $(OBJ)
 
 fclean: clean
-	rm -rf $(NOM)
+	@rm -rf $(NOM)
 
 re: fclean all
 all: $(NOM)

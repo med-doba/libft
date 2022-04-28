@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 11:08:10 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/25 17:46:01 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/27 10:50:15 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -34,11 +34,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	ptr[i] = '\0';
 	return (ptr);
-}
-#include <stdio.h>
-int main ()
-{
-    char s1[] = "MohaEdooChak";
-    printf("%s", ft_substr(s1, 0, 2));
-    return 0;
 }

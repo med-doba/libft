@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 03:20:45 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/21 20:33:44 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/27 15:00:43 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,10 +56,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-/*#include <stdio.h>
-int main(void)
-{
-	int nbr = -18012003;
-	printf("%s\n", ft_itoa(nbr));
-	return (0);
-}*/

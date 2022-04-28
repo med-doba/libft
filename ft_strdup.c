@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 17:53:36 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/19 19:15:01 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/26 17:19:58 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,3 @@ char	*ft_strdup(const char *s1)
 	ft_memcpy(ptr, s1, n);
 	return (ptr);
 }
-/*#include <string.h>
-#include <stdio.h>
-int main ()
-{
-	char *eddo = "moha edo chak";
-    printf("%s",strdup(eddo));
-}*/

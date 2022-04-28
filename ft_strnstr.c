@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 10:26:57 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/22 13:30:54 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/26 16:59:53 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		x = 0;
 		if (haystack[i] == needle[x])
 		{
-			while (i + x <= len && haystack[i + x] == needle[x])
+			while (i + x < len && haystack[i + x] == needle[x])
 			{
 				x++;
 				if (!needle[x])
@@ -36,12 +36,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*#include <string.h>
-#include <stdio.h>
-int main ()
-{
-	char str[] = "lorem ipsum dolor sit amet";
-	char find[] = "ipsumm";
-	printf("%s\n", strnstr(str, find, 30));
-	printf("%s", ft_strnstr(str, find, 30));
-}*/

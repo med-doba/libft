@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 12:48:10 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/20 23:42:38 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/27 10:56:09 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -30,10 +30,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(ptr, s2, t);
 	return (ptr);
 }
-/*#include <stdio.h>
-int main ()
-{
-	char s[] = "moha";
-	char ss[] = "eddo";
-	printf("%s", ft_strjoin(s, ss));
-}*/

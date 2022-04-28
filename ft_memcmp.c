@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 12:47:46 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/20 18:59:15 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/26 16:50:09 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	else
 		return (str1[i] - str2[i]);
 }
-/*#include <stdio.h>
-#include <string.h>
-int main ()
-{
-	char str1[] = "Moha";
-	char str2[] = "Mohaa";
-	printf("%d\n", ft_memcmp(str1, str2, 5));
-	printf("%d", memcmp(str1, str2,	5));
-}*/

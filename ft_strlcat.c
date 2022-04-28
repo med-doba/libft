@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 16:54:21 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/22 13:12:45 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/26 16:20:38 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[d + j] = '\0';
 	return (d + s);
 }
-/*#include<string.h>
-#include<stdio.h>
-int main ()
-{
-	char dst[] = "rrrrrrrrrrrrrrr";
-	char src[] = "lorem ipsum dolor sit amet";
-	printf("dyali %zu", ft_strlcat(dst, src, 5));
-	printf("%s", dst);
-}*/

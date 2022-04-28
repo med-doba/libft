@@ -6,11 +6,10 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 17:02:59 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/19 22:48:20 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/27 15:27:06 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
@@ -31,9 +30,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd((nbr + '0'), fd);
 }
-/*#include <stdio.h>
-int main ()
-{
-	int n = -2147483648;
-	ft_putnbr_fd(n, 1);
-}*/

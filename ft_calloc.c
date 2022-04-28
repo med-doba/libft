@@ -6,7 +6,7 @@
 /*   By: med-doba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 17:32:58 by med-doba          #+#    #+#             */
-/*   Updated: 2021/11/21 20:32:35 by med-doba         ###   ########.fr       */
+/*   Updated: 2021/11/26 17:18:25 by med-doba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,21 +36,3 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero (ptr, len);
 	return (ptr);
 }
-/*#include <stdio.h>
-int main ()
-{
-	char *str;
-	int i; 
-
-	str = (char *)ft_calloc(100, sizeof(char));
-	if (str == NULL)
-		return (0);
-	//str = (char *)malloc(100);
-	i = 0;
-	while( i < 99)
-	{
-		printf("|%s| \n" , NULL);
-		i++;
-	}
-	return 0;	
-}*/
